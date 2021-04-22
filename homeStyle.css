@@ -79,7 +79,7 @@ footer {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .close {
@@ -95,7 +95,7 @@ footer {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 55%;
+  width: 59%;
   border-radius: 30px;
 }
 
@@ -109,9 +109,10 @@ footer {
   margin-top: 6%;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
-.textTemplete{
+.textTemplete {
   color: #046582;
   font-size: 18px;
   cursor: pointer;

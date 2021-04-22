@@ -37,19 +37,43 @@
     <div class="popUp" id="popup">
       <div class="windowPlay">
         <span class="close"> &times; </span>
-        <input type="text" placeholder="&nbsp; Your name" id="name" class="buttonPlay" style="width:50%; padding-left:10px; margin-left: 6%;">
+        <input
+          type="text"
+          placeholder="&nbsp; Your name"
+          id="name"
+          class="buttonPlay"
+          style="width: 50%; padding-left: 10px; margin-left: 6%"
+        />
         <div class="perant">
-            <div class="buttonLevel">
-                <input type="radio"  name="type" id="easy1"> <label class="textTemplete"> Easy </label>
-            </div>
-            <div class="buttonLevel">
-                <input type="radio" name="type" id="medium1"> <label class="textTemplete"> Medium </label>
-            </div>
-            <div class="buttonLevel">
-                <input type="radio" name="type" id="hard1"> <label class="textTemplete"> Hard </label>
-            </div>
+          <div class="buttonLevel">
+            <input
+              type="radio"
+              name="type"
+              id="easy1"
+              style="cursor: pointer"
+            />
+            <label class="textTemplete"> Easy </label>
           </div>
-        <button class="buttonPlay" id="go" style="margin-top: 5%;">Go</button>
+          <div class="buttonLevel">
+            <input
+              type="radio"
+              name="type"
+              id="medium1"
+              style="cursor: pointer"
+            />
+            <label class="textTemplete"> Medium </label>
+          </div>
+          <div class="buttonLevel">
+            <input
+              type="radio"
+              name="type"
+              id="hard1"
+              style="cursor: pointer"
+            />
+            <label class="textTemplete"> Hard </label>
+          </div>
+        </div>
+        <button class="buttonPlay" id="go" style="margin-top: 5%">Go</button>
       </div>
     </div>
     <script src="./homeJs.js"></script>
