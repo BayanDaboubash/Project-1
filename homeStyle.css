@@ -118,3 +118,13 @@ footer {
   cursor: pointer;
   font-weight: 500;
 }
+
+#name:active {
+  background-color: #f39189;
+  font-size: 25px;
+  color: #046582;
+}
+
+.home {
+  display: inline;
+}

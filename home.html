@@ -8,72 +8,78 @@
     <link rel="stylesheet" href="./homeStyle.css" />
   </head>
   <body>
-    <div class="title1">Memory Card Game</div>
-    <p class="bord">
-      Memory Card is a game of memorization skills, designed for the entire
-      family.
-    </p>
-    <button class="buttonPlay">Play</button>
-    <div class="perant">
-      <div class="child">
-        <img
-          src="https://www.playmeo.com/wp-content/uploads/2017/09/0404_climber-cards_PNG.png"
-        />
-      </div>
-      <div class="child">
-        <img
-          src="https://www.playmeo.com/wp-content/uploads/2017/09/0400_emoji-cards_PNG-1024x768.png"
-        />
-      </div>
-      <div class="child">
-        <img
-          src="https://www.playmeo.com/wp-content/uploads/2017/09/0377_fine-line-cards_PNG-1024x768.png"
-        />
-      </div>
-    </div>
-    <footer>
-      <p>&copy; 2021 Bayan Daboubash-MERAKI Academy</p>
-    </footer>
-    <div class="popUp" id="popup">
-      <div class="windowPlay">
-        <span class="close"> &times; </span>
-        <input
-          type="text"
-          placeholder="&nbsp; Your name"
-          id="name"
-          class="buttonPlay"
-          style="width: 50%; padding-left: 10px; margin-left: 6%"
-        />
-        <div class="perant">
-          <div class="buttonLevel">
-            <input
-              type="radio"
-              name="type"
-              id="easy1"
-              style="cursor: pointer"
-            />
-            <label class="textTemplete"> Easy </label>
-          </div>
-          <div class="buttonLevel">
-            <input
-              type="radio"
-              name="type"
-              id="medium1"
-              style="cursor: pointer"
-            />
-            <label class="textTemplete"> Medium </label>
-          </div>
-          <div class="buttonLevel">
-            <input
-              type="radio"
-              name="type"
-              id="hard1"
-              style="cursor: pointer"
-            />
-            <label class="textTemplete"> Hard </label>
-          </div>
+    <div class="home">
+      <div class="title1">Memory Card Game</div>
+      <p class="bord">
+        Memory Card is a game of memorization skills, designed for the entire
+        family.
+      </p>
+      <button class="buttonPlay">Play</button>
+      <div class="perant">
+        <div class="child">
+          <img
+            src="https://www.playmeo.com/wp-content/uploads/2017/09/0404_climber-cards_PNG.png"
+          />
         </div>
-        <button class="buttonPlay" id="go" style="margin-top: 5%">Go</button>
+        <div class="child">
+          <img
+            src="https://www.playmeo.com/wp-content/uploads/2017/09/0400_emoji-cards_PNG-1024x768.png"
+          />
+        </div>
+        <div class="child">
+          <img
+            src="https://www.playmeo.com/wp-content/uploads/2017/09/0377_fine-line-cards_PNG-1024x768.png"
+          />
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2021 Bayan Daboubash-MERAKI Academy</p>
+      </footer>
+      <div class="popUp" id="popup">
+        <div class="windowPlay">
+          <span class="close"> &times; </span>
+          <input
+            type="text"
+            placeholder="&nbsp; Your name"
+            id="name"
+            class="buttonPlay"
+            style="width: 50%; padding-left: 10px; margin-left: 6%"
+          />
+          <div class="perant">
+            <div class="buttonLevel">
+              <input
+                type="radio"
+                name="type"
+                id="easy1"
+                value="4"
+                style="cursor: pointer"
+                onchange=""
+              />
+              <label class="textTemplete"> Easy </label>
+            </div>
+            <div class="buttonLevel">
+              <input
+                type="radio"
+                name="type"
+                id="medium1"
+                value="6"
+                style="cursor: pointer"
+              />
+              <label class="textTemplete"> Medium </label>
+            </div>
+            <div class="buttonLevel">
+              <input
+                type="radio"
+                name="type"
+                id="hard1"
+                value="8"
+                style="cursor: pointer"
+              />
+              <label class="textTemplete"> Hard </label>
+            </div>
+          </div>
+          <button class="buttonPlay" id="go" style="margin-top: 5%">Go</button>
+        </div>
       </div>
     </div>
     <script src="./homeJs.js"></script>
