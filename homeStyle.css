@@ -128,3 +128,20 @@ footer {
 .home {
   display: inline;
 }
+
+.game{
+  display: none;
+}
+
+.borderPoint{
+  background-color: #f39189;
+  border-radius: 30px;
+  color: #046582;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1%;
+  margin: 5%;
+  border: 3px #046582 solid;
+  width: 11%;
+  height: 15%;
+}

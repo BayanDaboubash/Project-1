@@ -7,8 +7,13 @@ const easy = document.querySelector("#easy1");
 const medium = document.querySelector("#medium1");
 const hard = document.querySelector("#hard1");
 const home = document.querySelector(".home");
+const game = document.querySelector(".game");
+const boxPoint = document.querySelector("#point");
+const boxtime = document.querySelector("#time");
 let player = "";
 let diff = "";
+let point = 0;
+let time = 0;
 
 playBtn.addEventListener("click", () => {
   popUp.style.display = "block";
@@ -20,6 +25,7 @@ close.addEventListener("click", () => {
 
 go.addEventListener("click", () => {
   home.style.display = "none";
+  game.style.display = "flex";
 });
 
 go.addEventListener("click", () => {
@@ -32,3 +38,6 @@ go.addEventListener("click", () => {
     diff = hard.value;
   }
 });
+
+boxPoint.innerHTML = "Point : " + point;
+boxtime.innerHTML = "Time : " + time;
