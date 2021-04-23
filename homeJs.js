@@ -8,12 +8,15 @@ const medium = document.querySelector("#medium1");
 const hard = document.querySelector("#hard1");
 const home = document.querySelector(".home");
 const game = document.querySelector(".game");
+const result = document.querySelector(".result");
 const boxPoint = document.querySelector("#point");
 const boxtime = document.querySelector("#time");
-let player = "";
-let diff = "";
+const final = document.querySelector("#final");
+const yourPoint = document.querySelector("#yourPoint");
+const voice = document.getElementById("myAudio");
+let player = "player1";
 let point = 0;
-let time = 0;
+let time = 2;
 
 playBtn.addEventListener("click", () => {
   popUp.style.display = "block";
@@ -26,18 +29,35 @@ close.addEventListener("click", () => {
 go.addEventListener("click", () => {
   home.style.display = "none";
   game.style.display = "flex";
-});
-
-go.addEventListener("click", () => {
   player = name.value;
   if (easy.checked) {
-    diff = easy.value;
+    time = parseInt(easy.value);
   } else if (medium.checked) {
-    diff = medium.value;
+    time = parseInt(medium.value);
   } else if (hard.checked) {
-    diff = hard.value;
+    time = parseInt(hard.value);
   }
+  boxtime.innerHTML = "Time : " + time;
+  countDown(time);
 });
 
+const countDown = (time) => {
+  let timer = setInterval(() => {
+    time--;
+    boxtime.innerHTML = "Time : " + time;
+    if (time === 0) {
+      game.style.display = "none";
+      result.style.display = "flex";
+      yourPoint.innerHTML = " <p> Your point:" + point + " </p>" ;
+      final.innerHTML = "<p> Thank You " + player + "</p>";
+      playAudio();
+      clearInterval(timer);
+    }
+  }, 1000);
+};
+
 boxPoint.innerHTML = "Point : " + point;
-boxtime.innerHTML = "Time : " + time;
+
+function playAudio() {
+  voice.play();
+}

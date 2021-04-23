@@ -48,7 +48,7 @@
                 type="radio"
                 name="type"
                 id="easy1"
-                value="4"
+                value="10"
                 style="cursor: pointer"
                 onchange=""
               />
@@ -59,7 +59,7 @@
                 type="radio"
                 name="type"
                 id="medium1"
-                value="6"
+                value="20"
                 style="cursor: pointer"
               />
               <label class="textTemplete"> Medium </label>
@@ -69,7 +69,7 @@
                 type="radio"
                 name="type"
                 id="hard1"
-                value="8"
+                value="30"
                 style="cursor: pointer"
               />
               <label class="textTemplete"> Hard </label>
@@ -80,10 +80,13 @@
       </div>
     </div>
     <div class="game">
-      <div id="point" class="borderPoint"> 
-      </div>
-      <div id="time" class="borderPoint" style="margin-left: 60%;"> 
-      </div>
+      <div id="point" class="borderPoint"></div>
+      <div id="time" class="borderPoint" style="margin-left: 60%"></div>
+    </div>
+    <div class="result">
+      <audio src="./voice.mp3" id="myAudio"></audio>
+      <div id="yourPoint"></div>
+      <div id="final"></div>
     </div>
     <footer>
       <p>&copy; 2021 Bayan Daboubash-MERAKI Academy</p>
