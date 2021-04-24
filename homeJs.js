@@ -14,7 +14,9 @@ const boxtime = document.querySelector("#time");
 const final = document.querySelector("#final");
 const yourPoint = document.querySelector("#yourPoint");
 const voice = document.getElementById("myAudio");
-let player = "player1";
+const voiceGame = document.getElementById("myAudioGame");
+const stopVoiceGame = document.getElementById("stopAudio");
+let player = "";
 let point = 0;
 let time = 2;
 
@@ -28,7 +30,7 @@ close.addEventListener("click", () => {
 
 go.addEventListener("click", () => {
   home.style.display = "none";
-  game.style.display = "flex";
+  game.style.display = "inline";
   player = name.value;
   if (easy.checked) {
     time = parseInt(easy.value);
@@ -39,6 +41,7 @@ go.addEventListener("click", () => {
   }
   boxtime.innerHTML = "Time : " + time;
   countDown(time);
+  playAudioGame();
 });
 
 const countDown = (time) => {
@@ -47,9 +50,10 @@ const countDown = (time) => {
     boxtime.innerHTML = "Time : " + time;
     if (time === 0) {
       game.style.display = "none";
-      result.style.display = "flex";
+      result.style.display = "inline";
       yourPoint.innerHTML = " <p> Your point:" + point + " </p>" ;
       final.innerHTML = "<p> Thank You " + player + "</p>";
+      pauseAudioGame();
       playAudio();
       clearInterval(timer);
     }
@@ -61,3 +65,15 @@ boxPoint.innerHTML = "Point : " + point;
 function playAudio() {
   voice.play();
 }
+
+function playAudioGame() {
+  voiceGame.play();
+}
+
+function pauseAudioGame() {
+  voiceGame.pause();
+}
+
+stopVoiceGame.addEventListener("click", () => {
+  pauseAudioGame();
+});

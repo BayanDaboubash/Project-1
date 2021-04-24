@@ -156,7 +156,6 @@ footer {
   font-weight: bold;
   margin-bottom: 5%;
   color: #f39189;
-
 }
 
 #yourPoint {
@@ -164,6 +163,10 @@ footer {
   font-weight: bold;
   margin-bottom: 5%;
   color: #bb8082;
+}
+
+.buttonAll{
+  display: flex;
 }
 
 /*.perantGame{
