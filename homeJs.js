@@ -16,9 +16,13 @@ const yourPoint = document.querySelector("#yourPoint");
 const voice = document.getElementById("myAudio");
 const voiceGame = document.getElementById("myAudioGame");
 const stopVoiceGame = document.getElementById("stopAudio");
+const games = document.querySelector("#games");
 let player = "";
+let diff =0;
 let point = 0;
 let time = 2;
+let a= "";
+let pic =0;
 
 playBtn.addEventListener("click", () => {
   popUp.style.display = "block";
@@ -34,13 +38,17 @@ go.addEventListener("click", () => {
   player = name.value;
   if (easy.checked) {
     time = parseInt(easy.value);
+    diff = 4;
   } else if (medium.checked) {
     time = parseInt(medium.value);
+    diff = 6;
   } else if (hard.checked) {
     time = parseInt(hard.value);
+    diff = 12;
   }
   boxtime.innerHTML = "Time : " + time;
   countDown(time);
+  templeteGame(diff);
   playAudioGame();
 });
 
@@ -77,3 +85,35 @@ function pauseAudioGame() {
 stopVoiceGame.addEventListener("click", () => {
   pauseAudioGame();
 });
+
+const templeteGame = (diff) =>{
+  if(diff === 4){
+    games.classList.add("perantGame" , "gridTemClumnEasy");  
+  }
+  if(diff === 6){
+    games.classList.add("perantGame" , "gridTemClumnMeduim");  
+  }
+  if(diff === 12){
+    games.classList.add("perantGame" , "gridTemClumnHard");  
+  }
+  for(let i=0; i< diff; i++){
+    a = "n"+i
+    games.innerHTML += "<div id="+a+"> </div>"
+  }
+  for(let i=0; i< diff; i++){
+    a = "n"+i;
+    document.querySelector("#"+a).classList.add("divStyle");
+    document.querySelector("#"+a).innerHTML ="<button id= "+a+"> <img src='./p1.png' height='100%' width='100%' style='cursor: pointer'> </button> "
+  }
+}
+
+/*const pic =(diff) =>{
+  pic = Math.round(Math.random()*(diff/2));
+}
+
+for(let i=0; i< diff; i++){
+  a = "n"+i;
+  document.querySelector("#"+a).addEventListener("click", () => {
+    document.querySelector("#"+a).src += pic;
+  });
+}*/

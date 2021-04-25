@@ -169,14 +169,31 @@ footer {
   display: flex;
 }
 
-/*.perantGame{
-  margin-top:20%;
-  margin-left:5%;
-  margin-bottom:20%;
-  width: 80%;
-  display: flex;
-  gap: 10%;
-  align-content: center;
-  flex-direction: column;
-  border: 2px black solid;
-}*/
+.perantGame {
+  display: grid;
+  gap: 1%;
+  height: 25%;
+  width: 50%;
+  border: 1px solid black;
+  margin-left: 25%;
+  margin-bottom: 6%;
+}
+
+.gridTemClumnEasy{
+  grid-template-columns: repeat(2 , 50%);
+  grid-template-rows: repeat(2 , 50%);
+}
+
+.gridTemClumnMeduim{
+  grid-template-columns: repeat(3 , 32%);
+  grid-template-rows: repeat(2 , 50%);
+}
+
+.gridTemClumnHard{
+  grid-template-rows: repeat(3 , 32%);
+  grid-template-columns: repeat(4 , 25%);
+}
+
+.divStyle{
+  border: black solid 1px;
+}
