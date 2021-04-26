@@ -169,31 +169,31 @@ footer {
   display: flex;
 }
 
-.perantGame {
-  display: grid;
-  gap: 1%;
-  height: 25%;
-  width: 50%;
-  border: 1px solid black;
-  margin-left: 25%;
-  margin-bottom: 6%;
+.easyGame{
+  display: inline;
 }
 
-.gridTemClumnEasy{
-  grid-template-columns: repeat(2 , 50%);
-  grid-template-rows: repeat(2 , 50%);
+.meduimGame{
+  display: none;
 }
 
-.gridTemClumnMeduim{
-  grid-template-columns: repeat(3 , 32%);
-  grid-template-rows: repeat(2 , 50%);
+.hardGame{
+  display: none;
 }
 
-.gridTemClumnHard{
-  grid-template-rows: repeat(3 , 32%);
-  grid-template-columns: repeat(4 , 25%);
+.buttonPlayAgain{
+  background-color: #f39189;
+  border-radius: 30px;
+  border-color: #6e7582;
+  color: #046582;
+  margin-bottom: 5%;
+  height: 75px;
+  width: 150px;
+  font-size: 25px;
+  cursor: pointer;
 }
 
-.divStyle{
-  border: black solid 1px;
+#space{
+  margin: 2%;
+  color: #6e7582;
 }

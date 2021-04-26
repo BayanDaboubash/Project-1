@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Memory Card Game</title>
     <link rel="stylesheet" href="./homeStyle.css" />
+    <link rel="stylesheet" href="./game.css" />
   </head>
   <body>
     <div class="home">
@@ -82,21 +84,140 @@
     <div class="game">
       <div class="buttonAll">
         <audio src="./voiceGame.mp3" id="myAudioGame"></audio>
-        <div id="point" class="borderPoint"></div>
-        <button class="borderPoint" style="cursor: pointer; margin-left: 25%; width: 13%;" id="stopAudio"> Stop music </button>
-        <div id="time" class="borderPoint" style="margin-left: 25%;"></div>
+        <button class="borderPoint" style="width: 13%;" id="stopAudio"> Stop music </button>
+        <div id="time" class="borderPoint" style="margin-left: 23%;"></div>
+        <button class="borderPoint" id="finish" style="cursor: pointer; margin-left: 25%; width: 13%;">Finish</button>
       </div>
-      <div class="perantGame" id="games">
-      </div>
+    <div class="easyGame newBody">
+      <section class="memory-game">
+        <div class="memory-card newBody" data-framework="angular">
+          <img class="front-face" src="./3.jpg" alt="Angular" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="angular">
+          <img class="front-face" src="./3.jpg" alt="Angular" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="react">
+          <img class="front-face" src="./6.jpg" alt="React" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="react">
+          <img class="front-face" src="./6.jpg" alt="React" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+      </section>
+    </div>
+    <div class="meduimGame newBody">
+      <section class="memory-game">
+        <div class="memory-card newBody" data-framework="aurelia">
+          <img class="front-face" src="./1.jpg" alt="Aurelia" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="aurelia">
+          <img class="front-face" src="./1.jpg" alt="Aurelia" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+    
+        <div class="memory-card newBody" data-framework="vue">
+          <img class="front-face" src="./2.jpg" alt="Vue" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="vue">
+          <img class="front-face" src="./2.jpg" alt="Vue" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+    
+        <div class="memory-card newBody" data-framework="ember">
+          <img class="front-face" src="./4.jpg" alt="Ember" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="ember">
+          <img class="front-face" src="./4.jpg" alt="Ember" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+    
+        <div class="memory-card newBody" data-framework="backbone">
+          <img class="front-face" src="./5.jpg" alt="Backbone" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="backbone">
+          <img class="front-face" src="./5.jpg" alt="Backbone" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+      </section>
+    </div>
+    <div class="hardGame newBody">
+      <section class="memory-game">
+        <div class="memory-card newBody" data-framework="aurelia">
+          <img class="front-face" src="./1.jpg" alt="Aurelia" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="aurelia">
+          <img class="front-face" src="./1.jpg" alt="Aurelia" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+    
+        <div class="memory-card newBody" data-framework="vue">
+          <img class="front-face" src="./2.jpg" alt="Vue" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="vue">
+          <img class="front-face" src="./2.jpg" alt="Vue" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+    
+        <div class="memory-card newBody" data-framework="angular">
+          <img class="front-face" src="./3.jpg" alt="Angular" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="angular">
+          <img class="front-face" src="./3.jpg" alt="Angular" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+    
+        <div class="memory-card newBody" data-framework="ember">
+          <img class="front-face" src="./4.jpg" alt="Ember" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="ember">
+          <img class="front-face" src="./4.jpg" alt="Ember" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+    
+        <div class="memory-card newBody" data-framework="backbone">
+          <img class="front-face" src="./5.jpg" alt="Backbone" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="backbone">
+          <img class="front-face" src="./5.jpg" alt="Backbone" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+    
+        <div class="memory-card newBody" data-framework="react">
+          <img class="front-face" src="./6.jpg" alt="React" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card newBody" data-framework="react">
+          <img class="front-face" src="./6.jpg" alt="React" />
+          <img class="back-face" src="./p1.png" alt="JS Badge" />
+        </div>
+      </section>
+    </div>
     </div>
     <div class="result">
       <audio src="./voice.mp3" id="myAudio"></audio>
-      <div id="yourPoint"></div>
+      <div id="space"> space </div>
       <div id="final"></div>
+      <div id="space"> space </div>
+      <div id="yourPoint"></div>
+      <div id="space"> space </div>
+      <button class="buttonPlayAgain" id="playAgain">Play Again</button>
     </div>
     <footer>
       <p>&copy; 2021 Bayan Daboubash-MERAKI Academy</p>
     </footer>
     <script src="./homeJs.js"></script>
+    <script src="./game.js"></script>
   </body>
 </html>
